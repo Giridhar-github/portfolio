@@ -5,14 +5,14 @@ const ExperienceSection = () => {
   return (
     <CommonMargin>
       <div className="">
-        <div className="flex items-center">
+        <div className="flex lg:flex-row flex-col-reverse items-center lg:items-start">
           <div className="flex-[0.6] flex-wrap">
             <p className="text-xl font-bold text-justify">PHP Developer</p>
             <p className="text-xl font-medium text-justify">
               Virtual Sys Technologies, Infopark, Cherthala | 2022 - present
               <br />
             </p>
-            <ul className="list-disc leading-10 mt-5">
+            <ul className="list-disc leading-10 mt-5 space-y-1 text-justify">
               <li>
                 Designed and maintained dynamic web applications tosupport
                 organizational goals.
@@ -32,8 +32,8 @@ const ExperienceSection = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-[0.4] flex justify-end">
-            <h1 className="text-9xl font-extrabold">Experience</h1>
+          <div className="flex-[0.4] flex justify-end mb-10 lg:mb-0">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-extrabold">Experience</h1>
           </div>
         </div>
       </div>

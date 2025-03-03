@@ -6,13 +6,13 @@ import { FiArrowDownRight } from "react-icons/fi";
 const SectionFour = () => {
   return (
     <CommonMargin>
-      <div className="flex justify-between gap-10 border-b-3 border-gray-800 pb-10">
-        <div className="flex-[0.3] border-r-2 flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between gap-10 border-b-3 border-gray-800 pb-10">
+        <div className="flex-[0.3] md:border-r-2 flex justify-between">
           <h4 className="text-4xl font-semibold">(What I Do)</h4>
           <FiArrowDownRight size={50} className="me-10" />
         </div>
         <div className="flex-[0.7]">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <CommonCard title="Backend Development" description="Build dynamic and interactive web applications using PHP. Develop and maintain server-side logic, databases, and APIs." />
             <CommonCard title="Frontend Integration" description="Work with HTML, CSS, JavaScript, and frameworks like Bootstrap & Tailwind CSS. Ensure seamless integration between backend and frontend components." />
             <CommonCard title="Database Management" description="Design and optimize relational databases (MySQL). Write efficient queries and handle data operations securely." />

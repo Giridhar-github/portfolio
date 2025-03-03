@@ -6,9 +6,9 @@ const SectionThree = () => {
   return (
     <CommonMargin>
       <div className="">
-        <div className="flex gap-10 border-b-3 border-b-gray-800 p-20">
+        <div className="flex flex-row gap-10 pb-5 md:pb-2 border-b-3 border-b-gray-800 lg:p-20">
           <div className="flex-[0.7] border-e-3 border-e-gray-800 p-5 flex-wrap">
-            <h4 className="text-8xl font-bold">
+            <h4 className="text-2xl md:text-5xl lg:text-8xl font-bold">
             As a web developer, I specialize in creating high-quality and engaging web experiences.
             </h4>
           </div>
