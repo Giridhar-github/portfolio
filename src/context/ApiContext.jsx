@@ -9,12 +9,16 @@ export const ApiProvider = ({ children }) => {
   const [mistake, setMistake] = useState(null);
   const API_URL = import.meta.env.VITE_BACKEND_API_URL;
   useEffect(() => {
-    axios.get(API_URL).then((response)=>
-        console.log(response.data)
-    ).catch((err)=>{
-        console.log("Eoor");
-        
-    })
+    axios
+      .get(API_URL)
+      .then((response) => {
+        setLoading(false);
+        setData(response.data);
+      })
+      .catch((err) => {
+        setLoading(false);
+        setMistake(err.message);
+      });
   }, []);
 
   return (
