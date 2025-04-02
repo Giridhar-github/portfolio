@@ -6,7 +6,7 @@ const SectionTwo = () => {
   const { personal_details } = data;
 
   return (
-    <div className="bg-red-600">
+    <div className="">
       <img
         className="w-full h-[500px] md:h-[920px] object-cover"
         src={personal_details.photo}

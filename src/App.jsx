@@ -7,20 +7,25 @@ import ContactSection from "./components/ContactSection";
 import SectionFive from "./components/SectionFive";
 import SectionSix from "./components/SectionSix";
 import { ApiContext } from "./context/ApiContext";
+import CommonResponse from "./components/CommonResponse";
+import ProfessionalSkillSection from "./components/ProfessionalSkillSection";
 
 const App = () => {
-  const { loading } = useContext(ApiContext);
+  const { loading, mistake, data } = useContext(ApiContext);
 
   return loading ? (
-    <h1>loading...</h1>
+    <CommonResponse err={false}  msg={"Loading..."} />
+  ) : mistake ? (
+    <CommonResponse err={true} msg={mistake} />
   ) : (
-    <div className="font-[Century_Gothic] text-gray-800">
+    <div className="font-[Garamond] text-gray-800">
       <SectionOne />
       <SectionTwo />
       <SectionThree />
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <ProfessionalSkillSection />
       <ContactSection />
     </div>
   );
