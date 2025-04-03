@@ -19,7 +19,7 @@ export const ApiProvider = ({ children }) => {
         setLoading(false);
         setMistake(err.message);
       });
-  }, [data]);
+  }, []);
 
   return (
     <ApiContext.Provider value={{ data, loading, mistake }}>

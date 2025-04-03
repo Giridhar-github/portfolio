@@ -9,6 +9,7 @@ import SectionSix from "./components/SectionSix";
 import { ApiContext } from "./context/ApiContext";
 import CommonResponse from "./components/CommonResponse";
 import ProfessionalSkillSection from "./components/ProfessionalSkillSection";
+import SectionSeven from "./components/SectionSeven";
 
 const App = () => {
   const { loading, mistake, data } = useContext(ApiContext);
@@ -26,6 +27,7 @@ const App = () => {
       <SectionFive />
       <SectionSix />
       <ProfessionalSkillSection />
+      <SectionSeven />
       <ContactSection />
     </div>
   );

@@ -5,7 +5,7 @@ import { ApiContext } from "../context/ApiContext";
 
 const SectionThree = () => {
   const { data } = useContext(ApiContext);
-  const { personal_details } = data;
+  const { personal_details,contact_details } = data;
 
   return (
     <CommonMargin>
@@ -21,10 +21,10 @@ const SectionThree = () => {
               <h4 className="text-4xl font-semibold">(About Me)</h4>
             </div>
             <div className="flex gap-3">
-              <button className="bg-gray-800 p-5 rounded-full">
+              <button className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-linear-to-r hover:from-[#f70088] hover:to-[#7521f5]" onClick={()=>{window.open(contact_details.instagram,"_blank")}}>
                 <FaInstagram color="white" />
               </button>
-              <button className="bg-gray-800 p-5 rounded-full">
+              <button className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-[#0a66c2] " onClick={()=>{window.open(contact_details.linkedIn,"_blank")}}>
                 <FaLinkedinIn color="white" />
               </button>
             </div>
