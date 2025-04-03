@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 import CommonMargin from "./CommonMargin";
 import { ApiContext } from "../context/ApiContext";
 
@@ -26,6 +27,9 @@ const SectionThree = () => {
               </button>
               <button className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-[#0a66c2] " onClick={()=>{window.open(contact_details.linkedIn,"_blank")}}>
                 <FaLinkedinIn color="white" />
+              </button>
+              <button className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-[#eb493b] " onClick={()=>{window.open(contact_details.email,"_blank")}}>
+                <BiLogoGmail color="white" />
               </button>
             </div>
           </div>

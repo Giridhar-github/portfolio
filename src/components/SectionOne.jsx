@@ -25,7 +25,7 @@ const SectionOne = () => {
               <FaRegMoon color="white" size={20} />
             </button>
           </div>
-          <button className="text-2xl font-semibold">Scroll Down</button>
+          <button className="text-2xl font-semibold cursor-pointer" onClick={()=>{window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}}>Scroll Down</button>
         </div>
       </div>
     </CommonMargin>
