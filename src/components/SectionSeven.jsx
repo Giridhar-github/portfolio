@@ -12,12 +12,12 @@ const SectionSeven = () => {
   return (
     <CommonMargin>
       <div>
-        <div className="mb-10">
+        <div className="mb-10 animate-fade-right animate-delay-[1600ms] animate-ease-in-out animate-duration-[1500ms]">
           <h6 className="text-5xl md:text-7xl lg:text-7xl font-extrabold ">
             Projects
           </h6>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 animate-fade animate-delay-[1600ms] animate-ease-in-out animate-duration-[1800ms]">
           {projects.map((item, index) => (
             <div
               key={item.id}

@@ -7,7 +7,7 @@ const SectionFive = () => {
   const { personal_details } = data;
   return (
     <CommonMargin>
-      <div className="border-b-3 border-gray-800 pb-20">
+      <div className="border-b-3 border-gray-800 pb-20 animate-fade-left animate-delay-[1600ms] animate-ease-in-out animate-duration-[2000ms]">
         <div className="flex flex-col lg:flex-row">
           <div className="flex-[0.4] mb-8 lg:mb-0">
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-extrabold">

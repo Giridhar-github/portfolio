@@ -9,7 +9,7 @@ const ProfessionalSkillSection = () => {
 
   return (
     <CommonMargin>
-      <div className="flex gap-3 my-10 justify-center items-center flex-wrap">
+      <div className="flex gap-3 my-10 justify-center items-center flex-wrap animate-pulse animate-once animate-ease-linear animate-normal animate-fill-forwards">
         {core_competencies.length > 0 ? (
           core_competencies.map((skill, index) => {
             const IconComponent = SiIcons[skill.icon];

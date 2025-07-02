@@ -6,9 +6,8 @@ const ContactSection = () => {
   const { data } = useContext(ApiContext);
   const {contact_details} = data;
   useEffect(()=>{
-console.log(contact_details);
-
   },[])
+
   return (
     <div className="bg-gray-800 h-screen text-white">
       <div className="h-full flex justify-center items-center">

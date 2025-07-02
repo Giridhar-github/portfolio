@@ -21,7 +21,7 @@ const App = () => {
   ) : (
     <div className="font-[Garamond] text-gray-800">
       <SectionOne />
-      <SectionTwo />
+      {/* <SectionTwo /> */}
       <SectionThree />
       <SectionFour />
       <SectionFive />
