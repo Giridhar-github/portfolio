@@ -7,12 +7,12 @@ const CommonResponse = ({ err,msg }) => {
     <div className="h-screen flex justify-center items-center flex-col">
       {err ? (
         <>
-          <img src={ErrorImg} alt="" />
+          <img src={ErrorImg} alt="" className="h-52 w-52 object-cover rounded-full" />
           <p>{msg}...</p>
         </>
       ) : (
         <>
-          <img src={LoaderImg} alt="" />
+          <img src={LoaderImg} alt="" className="h-52 rounded-full" />
           <p>{msg}</p>
         </>
       )}

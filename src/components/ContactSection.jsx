@@ -4,9 +4,8 @@ import { ApiContext } from "../context/ApiContext";
 
 const ContactSection = () => {
   const { data } = useContext(ApiContext);
-  const {contact_details} = data;
-  useEffect(()=>{
-  },[])
+  const { contact_details } = data;
+  useEffect(() => {}, []);
 
   return (
     <div className="bg-gray-800 h-screen text-white">
@@ -15,11 +14,14 @@ const ContactSection = () => {
           <p className="font-bold text-3xl">(Connect)</p>
           <p className="font-bold text-9xl text-center">Let's Talk</p>
           <div className="mt-5">
-            <a href={`tel:${contact_details.phone}`}>
-            <button className="bg-white text-gray-800 rounded-4xl px-5 py-2 font-bold flex justify-center items-center">
+            <button
+              className="bg-white text-gray-800 rounded-4xl px-5 py-2 font-bold flex justify-center items-center"
+              onClick={() => {
+                window.open(contact_details.instagram, "_blank");
+              }}
+            >
               Contact <GoArrowUpRight size={20} className="ms-2" />
             </button>
-            </a>
           </div>
         </div>
       </div>

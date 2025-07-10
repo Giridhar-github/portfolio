@@ -8,9 +8,14 @@ export const ApiProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [mistake, setMistake] = useState(null);
   const API_URL = import.meta.env.VITE_BACKEND_API_URL;
+  const API_TOKEN =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiJnIXIhZCNAcjUwNDUiLCJpYXQiOjE3NTE4NjcyNDUsImV4cCI6MTgxNDk4MjQ0NX0.cphspLSfEDFzIzgkkIViBHSueSPm8kuGjJ6QNXGoBnU";
+
   useEffect(() => {
+    const headers = { Authorization: `Bearer ${API_TOKEN}` };
+
     axios
-      .get(API_URL)
+      .get(API_URL, { headers })
       .then((response) => {
         setLoading(false);
         setData(response.data);
