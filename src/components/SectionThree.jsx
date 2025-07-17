@@ -20,18 +20,18 @@ const SectionThree = () => {
           </div>
           <div className="flex-[0.3] flex flex-col justify-between">
             <div className="animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]">
-              <h4 className="text-3xl md:text-4xl font-semibold">(About Me)</h4>
+              <h4 className="text-2xl md:text-4xl font-semibold">(About Me)</h4>
             </div>
             <div className="my-2 animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]">
               <img
-                className="lg:h-88"
+                className="h-40 w-full object-contain lg:h-88"
                 src={API_URL + personal_details.photo}
                 alt=""
               />
             </div>
             <div className="flex gap-1 md:gap-3">
               <button
-                className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-linear-to-r hover:from-[#f70088] hover:to-[#7521f5] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
+                className="bg-gray-800 p-3 md:p-5 rounded-full cursor-pointer hover:bg-linear-to-r hover:from-[#f70088] hover:to-[#7521f5] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
                 onClick={() => {
                   window.open(contact_details.instagram, "_blank");
                 }}
@@ -39,7 +39,7 @@ const SectionThree = () => {
                 <FaInstagram color="white" />
               </button>
               <button
-                className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-[#0a66c2] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
+                className="bg-gray-800 p-3 md:p-5 rounded-full cursor-pointer hover:bg-[#0a66c2] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
                 onClick={() => {
                   window.open(contact_details.linkedIn, "_blank");
                 }}
@@ -47,7 +47,7 @@ const SectionThree = () => {
                 <FaLinkedinIn color="white" />
               </button>
               <button
-                className="bg-gray-800 p-5 rounded-full cursor-pointer hover:bg-[#eb493b] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
+                className="bg-gray-800 p-3 md:p-5 rounded-full cursor-pointer hover:bg-[#eb493b] animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]"
                 onClick={() => {
                   window.open(contact_details.email, "_blank");
                 }}

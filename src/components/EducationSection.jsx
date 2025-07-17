@@ -1,12 +1,13 @@
 import React from "react";
 import CommonMargin from "./CommonMargin";
-import CommonCard from "./CommonCard";
+import EducationCard from "./EducationCard";
+
 import { FiArrowDownLeft } from "react-icons/fi";
 
 const EducationSection = ({ education }) => {
   return (
     <CommonMargin>
-      <div className="flex flex-col lg:flex-row-reverse justify-between gap-10 animate-fade-left animate-delay-[1600ms] animate-ease-in-out animate-duration-[2000ms]">
+      <div className="flex flex-col lg:flex-row-reverse justify-between gap-5 md:gap-10 animate-fade-left animate-delay-[1600ms] animate-ease-in-out animate-duration-[2000ms]">
         <div className="flex-[0.3] lg:border-l-2 flex flex-row-reverse md:flex-row md:items-start justify-start lg:justify-between">
           <FiArrowDownLeft
             size={50}
@@ -19,7 +20,7 @@ const EducationSection = ({ education }) => {
         <div className="flex-[0.7]">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {education.map((item, index) => (
-              <CommonCard
+              <EducationCard
               key={index}
                 title={item.qualification}
                 description={`${item.university}, ${item.year}`}
