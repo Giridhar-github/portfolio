@@ -18,7 +18,7 @@ const SectionThree = () => {
               {personal_details.job_description}
             </h4>
           </div>
-          <div className="flex-[0.3] flex flex-col justify-between">
+          <div className="flex-[0.3] flex flex-col justify-between items-start">
             <div className="animate-fade-right animate-delay-[1200ms] animate-ease-in-out animate-duration-[2000ms]">
               <h4 className="text-2xl md:text-4xl font-semibold">(About Me)</h4>
             </div>
