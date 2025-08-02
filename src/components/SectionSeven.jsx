@@ -21,7 +21,7 @@ const SectionSeven = () => {
           {projects.map((item, index) => (
             <div
               key={item.id}
-              className="rounded-md shadow-xs h-50 w-[370px] md:h-105 md:w-[100%] lg:h-80 lg:w-[550px] bg-no-repeat bg-contain bg-center bg-blend-multiply bg-zinc-500 hover:scale-110 duration-300 ease-out grayscale hover:grayscale-0"
+              className="rounded-md shadow-xs h-50 w-[370px] md:h-105 md:w-[100%] lg:h-80 lg:w-[550px] bg-no-repeat bg-cover bg-center bg-blend-multiply bg-zinc-500 hover:scale-110 duration-300 ease-out grayscale hover:grayscale-0"
               style={{ backgroundImage: `url(${API_URL + item.cover})` }}
             >
               <div className="flex flex-wrap justify-center items-center flex-col-reverse h-full">
