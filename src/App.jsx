@@ -15,7 +15,7 @@ const App = () => {
   const { loading, mistake, data } = useContext(ApiContext);
 
   return loading ? (
-    <CommonResponse err={false}  msg={"Loading..."} />
+    <CommonResponse err={false}  msg={"Please wait. Fetching data.."} />
   ) : mistake ? (
     <CommonResponse err={true} msg={mistake} />
   ) : (
