@@ -12,9 +12,9 @@ const SectionOne = () => {
 
   return (
     <CommonMargin>
-      <div className="flex justify-between w-full border-b-4 pb-8 md:pb-20 animate-fade-right animate-ease-in-out animate-delay-[500ms] animate-duration-[2000ms]">
+      <div className="flex justify-between w-full border-b-4 pb-8 md:pb-20 animate-fade-right animate-ease-in-out">
         <div className="flex-[0.7]">
-          <h2 className="text-5xl md:text-8xl lg:text-9xl font-bold animate-fade-right animate-ease-in-out animate-duration-[2000ms]">
+          <h2 className="text-5xl md:text-8xl lg:text-9xl font-bold animate-fade-right animate-ease-in-out animate-duration-[100ms]">
             {personal_details.name}
           </h2>
           <h2 className="text-3xl md:text-6xl lg:text-9xl font-bold animate-fade-right animate-delay-[500ms] animate-ease-in-out animate-duration-[2000ms]">
