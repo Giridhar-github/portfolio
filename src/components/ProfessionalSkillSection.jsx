@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { ApiContext } from "../context/ApiContext";
 import * as SiIcons from "react-icons/si";
 import CommonMargin from "./CommonMargin";

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { FaRegMoon } from "react-icons/fa";
 import { TbArrowDownToArc } from "react-icons/tb";
 import { MdOutlineFileDownload } from "react-icons/md";

@@ -1,4 +1,3 @@
-import React from "react";
 import CommonMargin from "./CommonMargin";
 
 const ExperienceSection = ({ experience }) => {

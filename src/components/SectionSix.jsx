@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import CommonMargin from "./CommonMargin";
 import EducationSection from "./EducationSection";
 import ExperienceSection from "./ExperienceSection";

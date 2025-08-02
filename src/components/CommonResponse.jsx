@@ -1,4 +1,3 @@
-import React from "react";
 import ErrorImg from "../assets/error.gif";
 import LoaderImg from "../assets/loading.gif";
 

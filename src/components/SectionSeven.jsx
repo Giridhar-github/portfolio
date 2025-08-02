@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import CommonMargin from "./CommonMargin";
 import { PiLinkBold } from "react-icons/pi";
 import { ApiContext } from "../context/ApiContext";
