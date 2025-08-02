@@ -5,7 +5,7 @@ const ExperienceSection = ({ experience }) => {
   return (
     <CommonMargin>
       <div className="">
-        <div className="flex lg:flex-row-reverse flex-col-reverse items-center lg:items-start animate-fade-right animate-delay-[1600ms] animate-ease-in-out animate-duration-[2000ms]">
+        <div className="flex lg:flex-row-reverse flex-col-reverse items-center lg:items-start animate-fade-right animate-delay-[1000ms] animate-ease-in-out animate-duration-[1000ms]">
           <div className="flex-[0.6] ">
             {experience.map((item, index) => (
               <div className="flex-wrap mb-0" key={index}>

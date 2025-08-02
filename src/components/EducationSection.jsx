@@ -7,7 +7,7 @@ import { FiArrowDownLeft } from "react-icons/fi";
 const EducationSection = ({ education }) => {
   return (
     <CommonMargin>
-      <div className="flex flex-col lg:flex-row-reverse justify-between gap-5 md:gap-10 animate-fade-left animate-delay-[1600ms] animate-ease-in-out animate-duration-[2000ms]">
+      <div className="flex flex-col lg:flex-row-reverse justify-between gap-5 md:gap-10 animate-fade-left animate-delay-[1000ms] animate-ease-in-out animate-duration-[1000ms]">
         <div className="flex-[0.3] lg:border-l-2 flex flex-row-reverse md:flex-row md:items-start justify-start lg:justify-between">
           <FiArrowDownLeft
             size={50}
